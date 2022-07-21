@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Titillium+Web:wght@200&display=swap");
+
+
+
+/* Skills section */
+.skills-section {
+  width: 100%; 
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h1.text-skills {
+  position: absolute;
+  
+  left: 0;
+  right: 0;
+  font-size: 25rem;
+  filter: opacity(0.2);
+  text-align: center;
+}
+
+.skills-section img {
+  width: 40%;
+  margin: 0 auto;
+  background: transparent;
+  animation: rotate 10s ease-in-out 1s infinite alternate-reverse;
+  -webkit-animation: rotate 10s ease-in-out 1s infinite alternate-reverse;
+  -o-animation: rotate 10s ease-in-out 1s infinite alternate-reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* End of Skills Section */
+
+/* Mobile devices Styling */
+@media screen and (max-width: 1300px) {
+  .skills-section {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+   h1.text-skills {
+    font-size: 16rem;
+    opacity: 0.9;
+  }
+} 
+
+@media screen and (max-width: 768px){ 
+   h1.text-skills {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-section img {
+    width: 60%;
+  }
+  
+   h1.text-skills {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+   h1.text-skills {
+    font-size: 5rem;
+  }
+}
